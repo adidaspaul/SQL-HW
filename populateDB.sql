@@ -19,18 +19,12 @@ values
     ('George', 'male', 1200),
     ('Apple', 'female', 4500);
 
-insert into
-    skills (rank, skills)
-values
-    ('Junior', ARRAY ['Java', 'Beginner English']),
-    (
-        'Middle',
-        ARRAY ['Java', 'Intermediate English', 'Business Analitics']
-    ),
-    (
-        'Senior',
-        ARRAY ['Java', 'Advanced English', 'Business Analitics', 'Business Solutions', 'Mentorship']
-    );
+    insert into
+        skills (rank, syntax)
+    values
+        ('Junior', 'Java'),
+        ('Middle','Java'),
+        ('Senior','Java');
 
 insert into
     projects (project_name, worth)
