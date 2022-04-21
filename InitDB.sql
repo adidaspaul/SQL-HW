@@ -7,7 +7,7 @@ CREATE TABLE developers (
 CREATE TABLE skills(
     id serial primary key,
     rank varchar(255) NOT NULL,
-    syntax varchar []
+    syntax varchar (255)
 );
 
 CREATE TABLE projects(
