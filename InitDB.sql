@@ -30,31 +30,31 @@ CREATE TABLE clients(
 );
 
 CREATE TABLE devskills(
-    dev_id int references developers(id) on delete cascade,
-    skill_id int references skills(id) on delete cascade,
+    dev_id int references developers(id),
+    skill_id int references skills(id),
     primary key (dev_id, skill_id)
 );
 
 CREATE TABLE devprojects(
-    dev_id int references developers(id) on delete cascade,
-    project_id int references projects(id) on delete cascade,
+    dev_id int references developers(id),
+    project_id int references projects(id),
     primary key (dev_id, project_id)
 );
 
 CREATE TABLE companydevs(
-    company_id int references companies(id) on delete cascade,
-    dev_id int references developers(id) on delete cascade,
+    company_id int references companies(id),
+    dev_id int references developers(id),
     primary key (dev_id, company_id)
 );
 
 CREATE TABLE clientprojects(
-    client_id int references clients(id) on delete cascade,
-    project_id int references projects(id) on delete cascade,
+    client_id int references clients(id),
+    project_id int references projects(id),
     primary key (client_id, project_id)
 );
 
 CREATE TABLE companyprojects(
-    company_id int references companies(id) on delete cascade,
-    project_id int references projects(id) on delete cascade,
+    company_id int references companies(id),
+    project_id int references projects(id),
     primary key (company_id, project_id)
 );
