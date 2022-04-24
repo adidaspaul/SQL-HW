@@ -1,5 +1,5 @@
 insert into
-    developers (name, sex)
+    developers (name, sex, salary)
 values
     ('Leo', 'male', 1200),
     ('Tanya', 'female', 10000),
