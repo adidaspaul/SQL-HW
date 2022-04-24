@@ -1,7 +1,8 @@
 CREATE TABLE developers (
     id serial primary key,
     name varchar(255) NOT null,
-    sex varchar(6) NOT null
+    sex varchar(6) NOT null,
+    salary int
 );
 
 CREATE TABLE skills(
